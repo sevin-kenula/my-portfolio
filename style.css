@@ -41,6 +41,7 @@ a {
 
     background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #eaeaea;
+
     backdrop-filter: blur(10px);
 }
 
@@ -66,6 +67,7 @@ nav {
 nav a {
     font-size: 0.9rem;
     color: #555555;
+
     transition: color 0.2s ease;
 }
 
@@ -92,7 +94,9 @@ nav a:hover {
 
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
+
     align-items: center;
+
     gap: 80px;
 }
 
@@ -100,8 +104,49 @@ nav a:hover {
     max-width: 700px;
 }
 
+.eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    color: #666666;
+
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+    max-width: 900px;
+
+    font-size: clamp(3.2rem, 8vw, 6.5rem);
+
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: #555555;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    font-size: 1.15rem;
+
+    color: #666666;
+
+    margin-bottom: 35px;
+}
+
+
+/* Hero Photo */
+
 .hero-photo {
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -121,43 +166,14 @@ nav a:hover {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
-.eyebrow {
-    margin-bottom: 18px;
 
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #666666;
-
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-}
-
-.hero h1 {
-    max-width: 900px;
-
-    font-size: clamp(3.2rem, 8vw, 6.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.06em;
-
-    margin-bottom: 28px;
-}
-
-.hero h1 span {
-    color: #555555;
-}
-
-.hero-description {
-    max-width: 600px;
-
-    font-size: 1.15rem;
-    color: #666666;
-
-    margin-bottom: 35px;
-}
+/* Hero Buttons */
 
 .hero-buttons {
     display: flex;
+
     gap: 12px;
+
     flex-wrap: wrap;
 }
 
@@ -181,11 +197,13 @@ nav a:hover {
 
 .primary-btn:hover {
     background: #333333;
+
     transform: translateY(-2px);
 }
 
 .secondary-btn {
     border: 1px solid #dddddd;
+
     color: #111111;
 }
 
@@ -224,7 +242,9 @@ nav a:hover {
 
 .section-heading h2 {
     font-size: clamp(2.2rem, 5vw, 4rem);
+
     line-height: 1;
+
     letter-spacing: -0.05em;
 }
 
@@ -235,8 +255,11 @@ nav a:hover {
 
 .about-content {
     display: grid;
+
     grid-template-columns: 1.5fr 1fr;
+
     gap: 70px;
+
     align-items: start;
 }
 
@@ -246,6 +269,7 @@ nav a:hover {
     margin-bottom: 20px;
 
     font-size: 1.05rem;
+
     color: #555555;
 }
 
@@ -253,13 +277,17 @@ nav a:hover {
     padding: 30px;
 
     background: #ffffff;
+
     border: 1px solid #e5e5e5;
+
     border-radius: 8px;
 }
 
 .about-card span {
     font-size: 0.75rem;
+
     color: #777777;
+
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -281,7 +309,9 @@ nav a:hover {
 
 .skills-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
 }
 
@@ -289,7 +319,9 @@ nav a:hover {
     padding: 28px;
 
     background: #ffffff;
+
     border: 1px solid #e5e5e5;
+
     border-radius: 8px;
 }
 
@@ -301,7 +333,9 @@ nav a:hover {
 
 .skill-list {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 }
 
@@ -309,9 +343,11 @@ nav a:hover {
     padding: 7px 11px;
 
     background: #f2f2f2;
+
     border-radius: 5px;
 
     font-size: 0.8rem;
+
     color: #555555;
 }
 
@@ -322,15 +358,18 @@ nav a:hover {
 
 .project-card {
     display: grid;
+
     grid-template-columns: 120px 1fr;
 
     padding: 45px;
 
     border: 1px solid #e3e3e3;
+
     border-radius: 10px;
 
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .project-card:hover {
@@ -341,6 +380,7 @@ nav a:hover {
 
 .project-number {
     font-size: 3rem;
+
     font-weight: 800;
 
     color: #dddddd;
@@ -350,11 +390,13 @@ nav a:hover {
     margin-bottom: 8px;
 
     font-size: 0.75rem;
+
     font-weight: 600;
 
     color: #777777;
 
     text-transform: uppercase;
+
     letter-spacing: 0.1em;
 }
 
@@ -362,6 +404,7 @@ nav a:hover {
     margin-bottom: 15px;
 
     font-size: 2rem;
+
     letter-spacing: -0.04em;
 }
 
@@ -373,7 +416,9 @@ nav a:hover {
 
 .project-tech {
     display: flex;
+
     gap: 8px;
+
     flex-wrap: wrap;
 
     margin: 25px 0;
@@ -383,6 +428,7 @@ nav a:hover {
     padding: 6px 10px;
 
     border: 1px solid #dddddd;
+
     border-radius: 4px;
 
     font-size: 0.75rem;
@@ -392,6 +438,7 @@ nav a:hover {
     display: inline-block;
 
     font-size: 0.9rem;
+
     font-weight: 600;
 
     border-bottom: 1px solid #111111;
@@ -404,22 +451,27 @@ nav a:hover {
 
 .education-card {
     display: grid;
+
     grid-template-columns: 130px 1fr;
+
     gap: 30px;
 
     padding: 35px;
 
     border: 1px solid #dddddd;
+
     border-radius: 8px;
 }
 
 .education-year {
     font-size: 0.8rem;
+
     font-weight: 700;
 
     color: #777777;
 
     text-transform: uppercase;
+
     letter-spacing: 0.1em;
 }
 
@@ -450,12 +502,15 @@ nav a:hover {
     margin-bottom: 30px;
 
     font-size: 1.1rem;
+
     color: #666666;
 }
 
 .contact-links {
     display: flex;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
@@ -476,17 +531,21 @@ footer {
     padding: 25px 0;
 
     background: #111111;
+
     color: #ffffff;
 }
 
 .footer-content {
     display: flex;
+
     justify-content: space-between;
+
     gap: 20px;
 }
 
 .footer-content p {
     font-size: 0.8rem;
+
     color: #999999;
 }
 
@@ -502,7 +561,24 @@ footer {
     }
 
     .hero {
-        min-height: 80vh;
+        min-height: auto;
+
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .hero-photo {
+        order: -1;
+    }
+
+    .hero-photo img {
+        width: 240px;
+        height: 300px;
     }
 
     .hero h1 {
@@ -515,6 +591,7 @@ footer {
 
     .about-content {
         grid-template-columns: 1fr;
+
         gap: 35px;
     }
 
@@ -524,7 +601,9 @@ footer {
 
     .project-card {
         grid-template-columns: 1fr;
+
         gap: 20px;
+
         padding: 30px;
     }
 
@@ -534,6 +613,7 @@ footer {
 
     .education-card {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
 
@@ -543,10 +623,23 @@ footer {
 }
 
 
+/* ================================
+   SMALL MOBILE
+================================ */
+
 @media (max-width: 480px) {
 
     .container {
         width: 88%;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-photo img {
+        width: 210px;
+        height: 270px;
     }
 
     .hero-description {
@@ -559,9 +652,165 @@ footer {
 
     .btn {
         text-align: center;
+
+        width: 100%;
     }
 
     .section-heading {
         margin-bottom: 35px;
     }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-info h3 {
+        font-size: 1.7rem;
+    }
+}
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Hero Animation */
+
+.hero-text {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-photo {
+    animation: fadeIn 1s ease 0.2s forwards;
+    opacity: 0;
+}
+
+
+/* Navbar Link Animation */
+
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 1px;
+
+    background: #111111;
+
+    transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* Skills Animation */
+
+.skill-group {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.skill-group:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Buttons */
+
+.btn {
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Project */
+
+.project-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Photo Hover */
+
+.hero-photo img {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.hero-photo img:hover {
+    transform: scale(1.02);
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Contact Links */
+
+.contact-links a {
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #555555;
+
+    transform: translateY(-2px);
 }
